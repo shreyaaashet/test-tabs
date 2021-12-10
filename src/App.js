@@ -6,6 +6,7 @@ import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import PersonIcon from "@mui/icons-material/Person";
 import Chats from "./components/Chats";
+import Navbar from "./components/Navbar";
 
 const App = React.memo(() => {
   const myId = "10";
@@ -138,7 +139,9 @@ const App = React.memo(() => {
   };
 
   return (
-    <Box
+   <Box>
+     <Navbar/>
+      <Box
       sx={{
         flexGrow: 1,
         bgcolor: "background.paper",
@@ -190,6 +193,7 @@ const App = React.memo(() => {
           })}
       </TabContext>
     </Box>
+   </Box>
   );
 });
 
