@@ -5,8 +5,8 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import PersonIcon from "@mui/icons-material/Person";
-import Chats from "./components/Chats";
 import Navbar from "./components/Navbar";
+import Chats from "./components/Chats";
 
 const App = React.memo(() => {
   const myId = "10";
@@ -139,61 +139,61 @@ const App = React.memo(() => {
   };
 
   return (
-   <Box>
-     <Navbar/>
+    <Box>
+      <Navbar />
       <Box
-      sx={{
-        flexGrow: 1,
-        bgcolor: "background.paper",
-        display: "flex",
-        height: "100vh",
-      }}
-    >
-      <TabContext value={value} variant="scrollable">
-        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-          <TabList
-            // value={conversations}
-            onChange={handleChange}
-            aria-label="lab API tabs example"
-            orientation="vertical"
-            variant="scrollable"
-          >
-            {conversations &&
-              conversations.map((conversation, index) => {
-                console.log(index);
-                return (
-                  <Tab
-                    icon={<PersonIcon />}
-                    iconPosition="start"
-                    label={conversation.userName}
-                    value={index.toString()}
-                    sx={{
-                      ml: 0,
-                      width: 200,
-                      justifyContent: "flex-start !important",
-                    }}
-                  />
-                );
-              })}
-          </TabList>
-        </Box>
-        {conversations &&
-          conversations.map((conversation, index) => {
-            let message = messages.filter((msg) => {
-              return msg.clients.indexOf(conversation.id) !== -1;
-            });
-            if (message[0]) {
-              message = message[0];
-            }
-            return (
-              <TabPanel value={index.toString()}>
-                <Chats conversation={conversation} message={message} />
-              </TabPanel>
-            );
-          })}
-      </TabContext>
+        sx={{
+          flexGrow: 1,
+          bgcolor: "background.paper",
+          display: "flex",
+          height: "88.45vh",
+        }}
+      >
+        <TabContext value={value} variant="scrollable">
+          <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+            <TabList
+              // value={conversations}
+              onChange={handleChange}
+              aria-label="lab API tabs example"
+              orientation="vertical"
+              variant="scrollable"
+            >
+              {conversations &&
+                conversations.map((conversation, index) => {
+                  console.log(index);
+                  return (
+                    <Tab
+                      icon={<PersonIcon />}
+                      iconPosition="start"
+                      label={conversation.userName}
+                      value={index.toString()}
+                      sx={{
+                        ml: 0,
+                        width: 200,
+                        justifyContent: "flex-start !important",
+                      }}
+                    />
+                  );
+                })}
+            </TabList>
+          </Box>
+          {conversations &&
+            conversations.map((conversation, index) => {
+              let message = messages.filter((msg) => {
+                return msg.clients.indexOf(conversation.id) !== -1;
+              });
+              if (message[0]) {
+                message = message[0];
+              }
+              return (
+                <TabPanel sx={{ width: "100%" }} value={index.toString()}>
+                  <Chats conversation={conversation} message={message} />
+                </TabPanel>
+              );
+            })}
+        </TabContext>
+      </Box>
     </Box>
-   </Box>
   );
 });
 
