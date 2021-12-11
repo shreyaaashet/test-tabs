@@ -55,27 +55,54 @@ const App = React.memo(() => {
       clients: ["1", "10"],
       messages: [
         {
-          id: "d73aadbc-7e61-4551-b40b-a0fefb789224",
+          id: "1",
           name: "Joh Doe",
           message: "hey",
           time: "13:47",
         },
         {
-          id: "d73aadbc-7e61-4551-b40b-a0fefb789224",
+          id: "10",
+          name: "Lenxt Person",
+          message: "Hey",
+          time: "13:47",
+        },
+        ,
+        {
+          id: "1",
           name: "Joh Doe",
           message: "How are you ",
           time: "13:47",
         },
         {
-          v: "d73aadbc-7e61-4551-b40b-a0fefb789224",
+          v: "1",
           name: "Joh Doe",
           message: "This is a test message",
           time: "13:47",
         },
         {
-          id: "d73aadbc-7e61-4551-b40b-a0fefb789224",
+          id: "1",
           name: "Joh Doe",
           message: "i hope you recive react js mastery",
+          time: "13:47",
+        },
+        {
+          id: "10",
+          name: "Lenxt Person",
+          message: "Thank you so much",
+          time: "13:47",
+        },
+        {
+          id: "10",
+          name: "Lenxt Person",
+          message:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra ullamcorper orci eget mollis. In viverra lectus euismod fringilla luctus. Vestibulum laoreet luctus imperdiet. Sed nec sagittis magna.",
+          time: "13:47",
+        },
+        {
+          id: "1",
+          name: "Joh Doe",
+          message:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra ullamcorper orci eget mollis. In viverra lectus euismod fringilla luctus. Vestibulum laoreet luctus imperdiet. Sed nec sagittis magna.",
           time: "13:47",
         },
       ],
@@ -84,13 +111,13 @@ const App = React.memo(() => {
       clients: ["2", "10"],
       messages: [
         {
-          id: "d73aadbc-7e61-4551-b40b-a0fefb789224",
+          id: "2",
           name: "Rishabh Singh",
           message: "hi",
           time: "12:47",
         },
         {
-          id: "d73aadbc-7e61-4551-b40b-a0fefb789224",
+          id: "2",
           name: "Rishabh Singh",
           message: "Hope you are good ",
           time: "13:47",
@@ -101,13 +128,13 @@ const App = React.memo(() => {
       clients: ["3", "10"],
       messages: [
         {
-          id: "d73aadbc-7e61-4551-b40b-a0fefb789224",
+          id: "3",
           name: "Shreya Shet",
           message: "hieeee",
           time: "12:47",
         },
         {
-          id: "d73aadbc-7e61-4551-b40b-a0fefb789224",
+          id: "3",
           name: "Shreya Shet",
           message: "Wyd",
           time: "13:47",
@@ -118,13 +145,13 @@ const App = React.memo(() => {
       clients: ["4", "10"],
       messages: [
         {
-          id: "d73aadbc-7e61-4551-b40b-a0fefb789224",
+          id: "4",
           name: "Lol LOl LOl",
           message: "hey",
           time: "12:47",
         },
         {
-          id: "d73aadbc-7e61-4551-b40b-a0fefb789224",
+          id: "4",
           name: "Lol LOl LOl",
           message: "we will start production soon",
           time: "13:47",
@@ -135,13 +162,13 @@ const App = React.memo(() => {
       clients: ["10", "5"],
       messages: [
         {
-          id: "d73aadbc-7e61-4551-b40b-a0fefb789224",
+          id: "5",
           name: "Newbie",
           message: "hey",
           time: "12:47",
         },
         {
-          id: "d73aadbc-7e61-4551-b40b-a0fefb789224",
+          id: "5",
           name: "Lol LOl LOl",
           message: "This is Newbie here",
           time: "13:47",
@@ -152,13 +179,13 @@ const App = React.memo(() => {
       clients: ["10", "6"],
       messages: [
         {
-          id: "d73aadbc-7e61-4551-b40b-a0fefb789224",
+          id: "6",
           name: "Newbie",
           message: "hey",
           time: "12:47",
         },
         {
-          id: "d73aadbc-7e61-4551-b40b-a0fefb789224",
+          id: "6",
           name: "Lol LOl LOl",
           message: "This is Newbie here",
           time: "13:47",
@@ -169,13 +196,13 @@ const App = React.memo(() => {
       clients: ["10", "7"],
       messages: [
         {
-          id: "d73aadbc-7e61-4551-b40b-a0fefb789224",
+          id: "7",
           name: "Newbie",
           message: "hey",
           time: "12:47",
         },
         {
-          id: "d73aadbc-7e61-4551-b40b-a0fefb789224",
+          id: "7",
           name: "Lol LOl LOl",
           message: "This is Newbie here",
           time: "13:47",
@@ -186,13 +213,13 @@ const App = React.memo(() => {
       clients: ["10", "8"],
       messages: [
         {
-          id: "d73aadbc-7e61-4551-b40b-a0fefb789224",
+          id: "8",
           name: "Newbie",
           message: "hey",
           time: "12:47",
         },
         {
-          id: "d73aadbc-7e61-4551-b40b-a0fefb789224",
+          id: "8",
           name: "Lol LOl LOl",
           message: "This is Newbie here",
           time: "13:47",
@@ -203,13 +230,13 @@ const App = React.memo(() => {
       clients: ["10", "9"],
       messages: [
         {
-          id: "d73aadbc-7e61-4551-b40b-a0fefb789224",
+          id: "9",
           name: "Newbie",
           message: "hey",
           time: "12:47",
         },
         {
-          id: "d73aadbc-7e61-4551-b40b-a0fefb789224",
+          id: "9",
           name: "Lol LOl LOl",
           message: "This is Newbie here",
           time: "13:47",
@@ -271,10 +298,14 @@ const App = React.memo(() => {
                 }
                 return (
                   <TabPanel
-                    sx={{ width: "100%", paddingBottom: 1 }}
+                    sx={{ width: "100%", paddingBottom: 1, p: 0 }}
                     value={index.toString()}
                   >
-                    <Chats conversation={conversation} message={message} />
+                    <Chats
+                      conversation={conversation}
+                      message={message}
+                      myId={myId}
+                    />
                   </TabPanel>
                 );
               })}

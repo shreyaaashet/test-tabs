@@ -6,7 +6,14 @@ import { useTheme } from "@emotion/react";
 const ChatFooter = () => {
   const theme = useTheme();
   return (
-    <Box sx={{ display: "flex", alignItems: "center" }}>
+    <Box
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        backgroundColor: "#DCC6FA",
+        p: 0.4,
+      }}
+    >
       <Paper
         component="form"
         sx={{
@@ -14,8 +21,6 @@ const ChatFooter = () => {
           display: "flex",
           alignItems: "center",
           width: "100%",
-          border: 1,
-          borderColor: theme.palette.primary.main,
           borderRadius: 10,
         }}
         elevation={0}
@@ -33,7 +38,7 @@ const ChatFooter = () => {
         component="span"
         size="large"
       >
-        <SendIcon style={{ transform: "scale(1.5)" }} />
+        <SendIcon style={{ transform: "scale(1.4)" }} />
       </IconButton>
     </Box>
   );
