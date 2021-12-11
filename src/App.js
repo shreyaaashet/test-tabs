@@ -265,6 +265,7 @@ const App = React.memo(() => {
             <Tabs
               orientation="vertical"
               variant="scrollable"
+              scrollButtons={false}
               value={value}
               onChange={handleChange}
               aria-label="Chats"
