@@ -22,24 +22,24 @@ export default function Navbar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position='static'>
+      <AppBar position="static" style={{ backgroundColor: "#9757EF" }}>
         <Toolbar>
-          <Typography variant='h6' component='div' sx={{ flexGrow: 1 }}>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Lenxt Chat
           </Typography>
           <div>
             <IconButton
-              size='large'
-              aria-label='account of current user'
-              aria-controls='menu-appbar'
-              aria-haspopup='true'
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
               onClick={handleMenu}
-              color='inherit'
+              color="inherit"
             >
               <ThreeDotIcon />
             </IconButton>
             <Menu
-              id='menu-appbar'
+              id="menu-appbar"
               anchorEl={anchorEl}
               anchorOrigin={{
                 vertical: "top",
