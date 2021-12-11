@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { memo, useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -8,9 +8,11 @@ import ThreeDotIcon from "@mui/icons-material/MoreVert";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 
-export default function Navbar() {
+const Navbar = () => {
   const [auth, setAuth] = useState(true);
   const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const menuItemStyles = { width: 200, justifyContent: "center" };
 
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
@@ -53,12 +55,27 @@ export default function Navbar() {
               open={Boolean(anchorEl)}
               onClose={handleClose}
             >
-              <MenuItem onClick={handleClose}>Profile</MenuItem>
-              <MenuItem onClick={handleClose}>My account</MenuItem>
+              <MenuItem sx={menuItemStyles} onClick={handleClose}>
+                My Profile
+              </MenuItem>
+              <MenuItem sx={menuItemStyles} onClick={handleClose}>
+                New Chat
+              </MenuItem>
+              <MenuItem sx={menuItemStyles} onClick={handleClose}>
+                Privacy Policy
+              </MenuItem>
+              <MenuItem sx={menuItemStyles} onClick={handleClose}>
+                Smart Lens
+              </MenuItem>
+              <MenuItem sx={menuItemStyles} onClick={handleClose}>
+                Log Out
+              </MenuItem>
             </Menu>
           </div>
         </Toolbar>
       </AppBar>
     </Box>
   );
-}
+};
+
+export default memo(Navbar);
