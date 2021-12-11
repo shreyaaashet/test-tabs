@@ -105,6 +105,18 @@ const App = React.memo(() => {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra ullamcorper orci eget mollis. In viverra lectus euismod fringilla luctus. Vestibulum laoreet luctus imperdiet. Sed nec sagittis magna.",
           time: "13:47",
         },
+        {
+          id: "1",
+          name: "Joh Doe",
+          message: "hey",
+          time: "13:47",
+        },
+        {
+          id: "10",
+          name: "Lenxt Person",
+          message: "Hello",
+          time: "13:47",
+        },
       ],
     },
     {
@@ -120,6 +132,31 @@ const App = React.memo(() => {
           id: "2",
           name: "Rishabh Singh",
           message: "Hope you are good ",
+          time: "13:47",
+        },
+        {
+          id: "10",
+          name: "Lenxt Person",
+          message: "Hello",
+          time: "13:47",
+        },
+        {
+          id: "10",
+          name: "Lenxt Person",
+          message: "Hello",
+          time: "13:47",
+        },
+        {
+          id: "10",
+          name: "Lenxt Person",
+          message: "Hello",
+          time: "13:47",
+        },
+        {
+          id: "2",
+          name: "Rishabh Singh",
+          message:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra ullamcorper orci eget mollis. In viverra lectus euismod fringilla luctus. Vestibulum laoreet luctus imperdiet. Sed nec sagittis magna.",
           time: "13:47",
         },
       ],
@@ -276,6 +313,7 @@ const App = React.memo(() => {
                   console.log(index);
                   return (
                     <Tab
+                      key={index}
                       icon={<PersonIcon />}
                       iconPosition="start"
                       label={conversation.userName}
@@ -299,6 +337,7 @@ const App = React.memo(() => {
                 }
                 return (
                   <TabPanel
+                    key={index}
                     sx={{ width: "100%", paddingBottom: 1, p: 0 }}
                     value={index.toString()}
                   >

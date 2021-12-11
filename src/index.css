@@ -24,11 +24,23 @@ code {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #B8D1E0;
+  background: #b8d1e0;
   border-radius: 14px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #9CBED3;
+  background: #9cbed3;
+}
+
+.chat-Box-Scroller {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  max-height: 78.9vh;
+}
+.chat-Box-Scroller button {
+  height: 30px !important;
+  width: 30px !important;
+  border-radius: 50%;
 }
